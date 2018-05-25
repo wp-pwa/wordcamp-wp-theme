@@ -31,7 +31,7 @@ $isOldChrome = preg_match('/chrome\/([1-3]\d\.)/i', $userAgent);
   } elseif ($_COOKIE['wppwaInjectorFailed']) {
     require_once(get_template_directory() . '/loading-failed.php');
   } else {
-    require_once(get_template_directory() . '/iframe-view.php');
+    require_once(get_template_directory() . '/desktop-view.php');
   } ?>
  </body>
 </html>
