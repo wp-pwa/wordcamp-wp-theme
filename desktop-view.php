@@ -137,5 +137,7 @@ $src = $dynamicUrl . '?siteId=' . $siteId
 if ($page) $src = $src . '&page=' . $page;
 
 ?>
-
-<iframe width="320" height="640" src="<?php echo $src; ?>"></iframe>
+<div class="desktop-view">
+  <iframe class="frontity" width="320" height="640" src="<?php echo $src; ?>"></iframe>
+  <img class="qr" 
+</div>

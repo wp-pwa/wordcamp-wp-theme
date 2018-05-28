@@ -14,24 +14,26 @@ $isOldChrome = preg_match('/chrome\/([1-3]\d\.)/i', $userAgent);
 ?>
 
 <!DOCTYPE HTML>
-<html <?php language_attributes(); ?> class="no-js">
- <head>
- 	<?php if (isset($GLOBALS['wp_pwa_path'])) { require(WP_PLUGIN_DIR . $GLOBALS['wp_pwa_path'] .'/injector/wp-pwa-injector.php'); } ?>
- 	<meta charset="<?php bloginfo( 'charset' ); ?>">
- 	<meta name="viewport" content="width=device-width, initial-scale=1">
- 	<link rel="profile" href="http://gmpg.org/xfn/11">
- 	<?php if ( is_singular() && pings_open( get_queried_object() ) ) : ?>
- 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
- 	<?php endif; ?>
- 	<?php wp_head(); ?>
- </head>
- <body>
-   <?php if ($isOldIos === 1 || $isOldChrome === 1) {
-    require_once(get_template_directory() . '/browser-too-old.php');
-  } elseif ($_COOKIE['wppwaInjectorFailed']) {
-    require_once(get_template_directory() . '/loading-failed.php');
-  } else {
-    require_once(get_template_directory() . '/desktop-view.php');
-  } ?>
- </body>
+<html <?php language_attributes();?> class="no-js">
+  <head>
+    <title>WordCamp Europe 2018</title>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css" type="text/css">
+    <?php if (isset($GLOBALS['wp_pwa_path'])) {require WP_PLUGIN_DIR . $GLOBALS['wp_pwa_path'] . '/injector/wp-pwa-injector.php';}?>
+    <meta charset="<?php bloginfo('charset');?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <?php if (is_singular() && pings_open(get_queried_object())): ?>
+    <link rel="pingback" href="<?php bloginfo('pingback_url');?>">
+    <?php endif;?>
+    <?php wp_head();?>
+  </head>
+  <body>
+    <?php if ($isOldIos === 1 || $isOldChrome === 1) {
+      require_once get_template_directory() . '/browser-too-old.php';
+    } elseif ($_COOKIE['wppwaInjectorFailed']) {
+      require_once get_template_directory() . '/loading-failed.php';
+    } else {
+      require_once get_template_directory() . '/desktop-view.php';
+    }?>
+  </body>
 </html>
