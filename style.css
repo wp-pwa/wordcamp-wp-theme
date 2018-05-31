@@ -655,6 +655,14 @@ a:active {
   width: 640px;
 }
 
+.container a,
+.container a:visited,
+.container a:hover,
+.container a:focus,
+.container a:active {
+  color: #5566C3;
+}
+
 .container header,
 .container section {
   box-sizing: border-box;
