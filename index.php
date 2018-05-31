@@ -16,9 +16,9 @@ $isOldChrome = preg_match('/chrome\/([1-3]\d\.)/i', $userAgent);
 <!DOCTYPE HTML>
 <html <?php language_attributes();?> class="no-js">
   <head>
+    <?php if (isset($GLOBALS['wp_pwa_path'])) {require WP_PLUGIN_DIR . $GLOBALS['wp_pwa_path'] . '/injector/wp-pwa-injector.php';}?>
     <title>WordCamp Europe 2018</title>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css" type="text/css">
-    <?php if (isset($GLOBALS['wp_pwa_path'])) {require WP_PLUGIN_DIR . $GLOBALS['wp_pwa_path'] . '/injector/wp-pwa-injector.php';}?>
     <meta charset="<?php bloginfo('charset');?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="http://gmpg.org/xfn/11">
