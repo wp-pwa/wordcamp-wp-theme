@@ -1,4 +1,4 @@
-<div class="desktop-view">
+<div class="loading-failed-view">
   <div class="mobile">
     <svg width="416px" height="746px" viewBox="0 0 416 746" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <defs>
@@ -39,7 +39,7 @@
   </div>
   <div class="container">
     <header>
-      <img class="logo" src="https://worona.sirv.com/logos/wceu-18-logo.png?scale.width=222&scale.height=222" width="222" height="222" srcset="https://worona.sirv.com/logos/wceu-18-logo.png?scale.width=222&scale.height=222 1x, https://worona.sirv.com/logos/wceu-18-logo.png?scale.width=444&scale.height=444 2x" alt="" />
+      <img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/wceu-18-logo-222x222.png" width="222" height="222" srcset="<?php echo get_template_directory_uri(); ?>/images/wceu-18-logo-222x222.png 1x, <?php echo get_template_directory_uri(); ?>/images/wceu-18-logo-444x444.png 2x" alt="" />
       <h1 class="title">WordCamp Europe 2018</h1>
       <p class="subtitle">June 14-16, Belgrade, Serbia | #WCEU</p>
     </header>

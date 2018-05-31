@@ -166,7 +166,7 @@ if ($page) $src = $src . '&page=' . $page;
   </div>
   <div class="container">
     <header>
-      <img class="logo" src="https://worona.sirv.com/logos/wceu-18-logo.png?scale.width=222&scale.height=222" width="222" height="222" srcset="https://worona.sirv.com/logos/wceu-18-logo.png?scale.width=222&scale.height=222 1x, https://worona.sirv.com/logos/wceu-18-logo.png?scale.width=444&scale.height=444 2x" alt="" />
+      <img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/wceu-18-logo-222x222.png" width="222" height="222" srcset="<?php echo get_template_directory_uri(); ?>/images/wceu-18-logo-222x222.png 1x, <?php echo get_template_directory_uri(); ?>/images/wceu-18-logo-444x444.png 2x" alt="" />
       <h1 class="title">WordCamp Europe 2018</h1>
       <p class="subtitle">June 14-16, Belgrade, Serbia | #WCEU</p>
     </header>
@@ -177,7 +177,7 @@ if ($page) $src = $src . '&page=' . $page;
         mobile phone to get the best experience. For more information about WordCamp Europe 2018 visit
         the <a href="https://2018.europe.wordcamp.org/">official website</a>.
       </p>
-      <img class="qr" src="https://worona-cdn.sirv.com/assets/qr-code.png?scale.width=132&scale.height=132" width="132" height="132" srcset="https://worona.sirv.com/assets/qr-code.png?scale.width=132&scale.height=132 1x, https://worona.sirv.com/assets/qr-code.png?scale.width=264&scale.height=264 2x" alt="" />
+      <img class="qr" src="<?php echo get_template_directory_uri(); ?>/images/qr-code-132x132.png" width="132" height="132" srcset="<?php echo get_template_directory_uri(); ?>/images/qr-code-132x132.png 1x, <?php echo get_template_directory_uri(); ?>/images/qr-code-264x264.png 2x" alt="" />
     </section>
   </div>
 </div>
