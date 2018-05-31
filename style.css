@@ -383,7 +383,7 @@ html {
 }
 
 body {
-  background: #1a1a1a;
+  background: white;
   /* Fallback for when there is no custom background color defined. */
 }
 
@@ -610,25 +610,49 @@ a:active {
   outline: 0;
 }
 
-.frontity {
-  border: none;
-  background-color: white;
-}
-
 .desktop-view {
   box-sizing: border-box;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: white;
+  padding: 24px;
+}
+
+.mobile {
+  margin-right: 32px;
+}
+
+.mobile .frontity {
+  border: none;
+  background-color: #e9e9e6;
+}
+
+@media (max-width: 1136px) {
+  .mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  header .logo {
+    width: 144px;
+    height: 144px;
+  }
+}
+
+@media (min-width: 481px) {
+  header .logo {
+    width: 222px;
+    height: 222px;
+  }
 }
 
 .container {
   box-sizing: border-box;
   width: 640px;
-  margin-left: 32px;
 }
 
 .container header,
@@ -643,8 +667,6 @@ a:active {
 
 header .logo {
   box-sizing: border-box;
-  width: 222px;
-  height: 222px;
   margin-bottom: 40px;
 }
 
