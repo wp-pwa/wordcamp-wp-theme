@@ -138,6 +138,44 @@ if ($page) $src = $src . '&page=' . $page;
 
 ?>
 <div class="desktop-view">
-  <iframe class="frontity" width="320" height="640" src="<?php echo $src; ?>"></iframe>
-  <img class="qr" 
+  <svg width="416px" height="746px" viewBox="0 0 416 746" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+      <rect id="path-1" x="28" y="0" width="360" height="745.714286" rx="40"></rect>
+      <rect id="path-2" x="0" y="0" width="334.279999" height="591.428571" rx="3"></rect>
+    </defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g id="Desktop:-Welcome" transform="translate(-416.000000, -227.000000)">
+        <g id="Phone" transform="translate(416.000000, 227.000000)">
+          <rect id="Rectangle-2" fill-opacity="0.5" fill="#FFFFFF" x="0" y="13" width="416" height="720"></rect>
+          <g id="outline">
+            <use fill-opacity="0.4" fill="#E9E9E6" fill-rule="evenodd" xlink:href="#path-1"></use>
+            <rect stroke="#E9E9E6" stroke-width="3" x="29.5" y="1.5" width="357" height="742.714286" rx="40"></rect>
+          </g>
+            <circle id="camera" stroke="#E9E9E6" stroke-width="2" cx="208" cy="36" r="4.14285714"></circle>
+            <circle id="button" stroke="#E9E9E6" stroke-width="2" cx="208" cy="703.285714" r="22.1428571"></circle>
+          <g id="screen">
+            <foreignObject x="40" y="72" width="335" height="592">
+              <iframe class="frontity" width="335" height="592" src="<?php echo $src; ?>"></iframe>
+            </foreignObject>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <div class="container">
+    <header>
+      <img class="logo" src="https://worona.sirv.com/logos/wceu-18-logo.png?scale.width=222&scale.height=222" width="222" height="222" srcset="https://worona.sirv.com/logos/wceu-18-logo.png?scale.width=222&scale.height=222 1x, https://worona.sirv.com/logos/wceu-18-logo.png?scale.width=444&scale.height=444 2x" alt="" />
+      <h1 class="title">WordCamp Europe 2018</h1>
+      <p class="subtitle">June 14-16, Belgrade, Serbia | #WCEU</p>
+    </header>
+    <section>
+      <h2 class="title">Progressive Web App</h2>
+      <p class="content">
+        Scan QR code or visit <a href="https://app.wp-europe.org">app.wp-europe.org</a> from your
+        mobile phone to get the best experience. For more information about WordCamp Europe 2018 visit
+        the <a href="https://2018.europe.wordcamp.org/">official website</a>.
+      </p>
+      <img class="qr" src="https://worona-cdn.sirv.com/assets/qr-code.png?scale.width=132&scale.height=132" width="132" height="132" srcset="https://worona.sirv.com/assets/qr-code.png?scale.width=132&scale.height=132 1x, https://worona.sirv.com/assets/qr-code.png?scale.width=264&scale.height=264 2x" alt="" />
+    </section>
+  </div>
 </div>

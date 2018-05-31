@@ -11,6 +11,8 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Source+Sans+Pro:400,400i,700,700i&subset=latin-ext');
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -610,16 +612,80 @@ a:active {
 
 .frontity {
   border: none;
-  border-radius: 20px;
+  background-color: white;
 }
 
 .desktop-view {
   box-sizing: border-box;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
-  padding: 40px 0;
-  background-image: url('https://2018.europe.wordcamp.org/files/2018/03/futuristic-header-wceu18-hero-desktop.png');
-  background-repeat: no-repeat;
+  align-items: center;
+  background-color: white;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 640px;
+  margin-left: 32px;
+}
+
+.container header,
+.container section {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header .logo {
+  box-sizing: border-box;
+  width: 222px;
+  height: 222px;
+  margin-bottom: 40px;
+}
+
+header .title {
+  font-family: 'Josefin Sans', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #F95758;
+  margin-bottom: 24px;
+}
+
+header .subtitle {
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+  font-size: 22px;
+  line-height: 22px;
+  text-align: center;
+  color: rgba(40, 36, 9, 0.8);
+}
+
+section .title {
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  color: #282409;
+}
+
+section .content {
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+  font-size: 22px;
+  line-height: 32px;
+  text-align: center;
+  color: #282409;
+}
+
+section .qr {
+  box-sizing: border-box;
+  width: 132px;
+  height: 132px;
 }
